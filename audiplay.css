@@ -1,42 +1,69 @@
 .ap_container {
-    background: rgb(141, 235, 199);
-    border-radius: 5px;
     display: inline-block;
     text-align: center;
-    padding: 13px;
-	width: 500px;
+	width: 30%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
 }
 .ap_controls {
+	width: 100%;
     display:  flex;
 	position: relative;
     flex-direction: row;
-	font-size: 30px;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: large;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	cursor: pointer;
+	
 }
 
 .ap_controls span {
 	margin: 5px;
+	display: inline-block;
 }
 .ap_container .playpausebtn {
     border-radius: 50%;
-    font-size: 20px;
+    font-size: larger;
 }
 
 .ap_container  svg {
-    width: 29px;
+    width: 25px;
+	height: 25px;
 }
-input[type="range"] {
-	-webkit-appearance: none;
+.ap_controls .duration {
 	width: 80%;
+	margin: 10px;
+	bottom: 4px;
+	
+	transition: all 1s;
+}
+.ap_controls input[type="range"] {
+	-webkit-appearance: none;
+	width: 100%;
 	outline: none;
 	height: 2px;
 	margin: 0 15px;
+	background: cyan;
 }
-input[type="range"]::-webkit-slider-thumb{
+.ap_controls:hover input[type="range"]::-webkit-slider-thumb{
 	-webkit-appearance: none;
 	height: 20px;
 	width: 20px;
-	background: #FF8A65;
 	border-radius: 50%;
 	cursor: pointer;
+	background: darkturquoise;
+}
+.ap_controls input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 0px;
+	
+}
+
+
+.ap_sound {
+	padding: 4px;
+}
+.ap_time {
+	margin: 4px;
 }
