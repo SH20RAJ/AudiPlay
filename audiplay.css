@@ -3,9 +3,11 @@
     text-align: center;
 	width: 30%;
 	position: absolute;
-	padding: 0;
-	margin: 0;
 	overflow: hidden;
+	padding: 5px;
+	background: rgb(247, 241, 246);
+	border-radius: 4px;
+	transition: all 1s;
 }
 .ap_controls {
 	width: 100%;
@@ -33,10 +35,9 @@
 }
 .ap_controls .duration {
 	width: 80%;
-	margin: 10px;
+	margin-right: 10px;
 	bottom: 4px;
-	
-	transition: all 1s;
+
 }
 .ap_controls input[type="range"] {
 	-webkit-appearance: none;

@@ -6,33 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audiplay - Free HTML5 Audio Player</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="audiplay.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="ap_container">
-        <audio controls class="audiplay" >
+    <audio controls class="audiplay" style="width: 700px;">
             <source src="Ark.mp3" type="audio/mp3">
-        </audio>
-        <div class="ap_controls">
-            <span class="playpausebtn" onclick="justplay()"> 
-            </span>
-
-            <span class="duration">
-                <input type="range" min="0" max="100" value="0" class="duration_slider" onchange="change_duration()">
-            </span>
-
-            <span class="ap_time"></span>
-
-            <span class="ap_download" onclick="ap_download()"></span>
-
-            <span class="ap_sound">
-                
-            </span>
-            <span class="ap_loop"></span>
-        </div>
-    </div>
+    </audio>
+    
     <script src="audiplay.js"></script>
 </body>
 
