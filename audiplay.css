@@ -5,7 +5,7 @@
 	position: absolute;
 	overflow: hidden;
 	padding: 5px;
-	background: rgba(245, 236, 242, 0.555);
+	background: rgba(245, 236, 242);
 	border-radius: 4px;
 	transition: all 1s;
 }
