@@ -133,7 +133,17 @@ const ap_audioElements = document.querySelectorAll('.audiplay');
 ap_audioElements.forEach((audioElement, index) => {
     audioElement.insertAdjacentHTML('beforebegin', ap_html);
     createContainer(audioElement, index);
+    
+    // Check if 'nodownload' attribute is present
+    if (audioElement.getAttribute("nodownload") !== null) {
+        const apContainer = audioElement.previousElementSibling;
+        const downloadButton = apContainer.querySelector('.ap_download');
+        if (downloadButton) {
+            downloadButton.style.display = 'none';
+        }
+    }
 });
+
 
 // Function to create container with appropriate class
 function createContainer(audioElement, index) {
