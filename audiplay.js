@@ -1,3 +1,4 @@
+// Codepen :- https://codepen.io/SH20RAJ/pen/YzMpONX?editors=0011
 // Constants
 const ap_playsvg = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -142,7 +143,7 @@ ap_audioElements.forEach((audioElement, index) => {
             downloadButton.style.display = 'none';
         }
     }
-  showtime(audioElement, index);
+  showtime(audioElement, index, true);
 });
 
 
@@ -220,7 +221,7 @@ ap_audioElements.forEach((audioElement, index) => {
 });
 
 // Function to display audio time
-function showtime(audioElement, index) {
+function showtime(audioElement, index, start) {
     const current = audioElement.currentTime;
     const duration = audioElement.duration;
     const minutes = Math.floor(current / 60);
@@ -228,7 +229,7 @@ function showtime(audioElement, index) {
     const duration_minutes = Math.floor(duration / 60);
     const duration_seconds = Math.floor(duration - duration_minutes * 60);
     let time = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds) + " / " + duration_minutes + ":" + (duration_seconds < 10 ? "0" + duration_seconds : duration_seconds);
-  
+  if(start) { time = duration_minutes + ":" + (duration_seconds < 10 ? "0" + duration_seconds : duration_seconds)}
     document.querySelector(`.ap_container_${index} .ap_time`).innerHTML = time;
 }
 
