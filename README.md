@@ -9,6 +9,7 @@ AudiPlay Integration - Free HTML5 Audio Player
 ---
 
 AudiPlay version 2 with multiple audio support <3 :- [Documentation](https://www.youtube.com/watch?v=wyaoy8uB3aE) | [GitHub Repo](https://github.com/SH20RAJ/AudiPlayV2/)
+Want the Old Version :- https://github.com/SH20RAJ/AudiPlay/tree/old
 
 ---
 
