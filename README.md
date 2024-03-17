@@ -1,6 +1,4 @@
-Here's a GitHub README template for your Audio Player library:
 
----
 
 [![](https://data.jsdelivr.com/v1/package/gh/SH20RAJ/AudiPlay/badge)](https://www.jsdelivr.com/package/gh/SH20RAJ/AudiPlay)
 
