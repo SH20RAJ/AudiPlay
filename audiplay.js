@@ -39,6 +39,8 @@ const ap_html = `
     background: rgba(245, 236, 242);
     border-radius: 4px;
     transition: all 1s;
+    width: 100%;
+    margin: auto;
 }
 
 .ap_controls {
@@ -49,6 +51,10 @@ const ap_html = `
     font-size: large;
     font-family: Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+    transition: all 0.5s;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .ap_controls span {
@@ -64,12 +70,14 @@ const ap_html = `
 .ap_container svg {
     width: 25px;
     height: 25px;
+    transition: all 0.3s;
 }
 
 .ap_controls .duration {
-    width: 80%;
-    margin-right: 10px;
-    bottom: 4px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    
 }
 
 .ap_controls input[type=range] {
@@ -77,8 +85,8 @@ const ap_html = `
     width: 100%;
     outline: 0;
     height: 2px;
-    margin: 0 15px;
     background: #0ff;
+    transition: all 0.3s;
 }
 
 .ap_controls:hover input[type=range]::-webkit-slider-thumb {
@@ -88,6 +96,7 @@ const ap_html = `
     border-radius: 50%;
     cursor: pointer;
     background: #00ced1;
+    transition: all 0.3s;
 }
 
 .ap_controls input[type=range]::-webkit-slider-thumb {
@@ -117,7 +126,7 @@ const ap_html = `
 </div>
 `;
 
-// Get all audio elements with class 'audiplay'
+// Get all audio elements with class 'audioplay'
 const ap_audioElements = document.querySelectorAll('.audiplay');
 
 // Insert the audio player before each audio element
