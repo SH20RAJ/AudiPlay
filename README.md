@@ -1,4 +1,4 @@
-
+[![](https://data.jsdelivr.com/v1/package/gh/SH20RAJ/AudiPlay/badge)](https://www.jsdelivr.com/package/gh/SH20RAJ/AudiPlay)
 <p><span style="font-size: medium;">&nbsp;</span></p><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><a href="https://1.bp.blogspot.com/-_pNGRfKhrOY/YDEmYVlt9dI/AAAAAAAAAjs/ev6XuuMm8xo9CD3_bOC74Wl5L7kueNnQACLcBGAsYHQ/s256/logo.png" style="margin-left: auto; margin-right: auto;"><span style="font-size: medium;"><img border="0" data-original-height="256" data-original-width="256" src="https://1.bp.blogspot.com/-_pNGRfKhrOY/YDEmYVlt9dI/AAAAAAAAAjs/ev6XuuMm8xo9CD3_bOC74Wl5L7kueNnQACLcBGAsYHQ/s0/logo.png" /></span></a></td></tr><tr><td class="tr-caption" style="text-align: center;"><span style="font-size: medium;">AudiPlay - HTML5 Audio Player</span></td></tr></tbody></table><span style="font-size: medium;"></span><p></p><p style="text-align: center;"><span style="font-size: x-large;">AudiPlay Integration - Free HTML5 Audio Player</span></p>
 
 
