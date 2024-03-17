@@ -13,9 +13,10 @@ Want the Old Version :- https://github.com/SH20RAJ/AudiPlay/tree/old
 
 ---
 
-## See GitHub
-
-[https://github.com/SH20RAJ/AudiPlay](https://github.com/SH20RAJ/AudiPlay)
+## See 
+- GitHub - [https://github.com/SH20RAJ/AudiPlay](https://github.com/SH20RAJ/AudiPlay) 
+- Codepen - https://codepen.io/SH20RAJ/pen/YzMpONX?editors=0011
+- Dev.to - https://dev.to/sh20raj/audiplay-custom-html5-audio-player-17ie
 
 ## Integration Article
 
