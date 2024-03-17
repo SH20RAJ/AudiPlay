@@ -142,6 +142,7 @@ ap_audioElements.forEach((audioElement, index) => {
             downloadButton.style.display = 'none';
         }
     }
+  showtime(audioElement, index);
 });
 
 
@@ -227,6 +228,7 @@ function showtime(audioElement, index) {
     const duration_minutes = Math.floor(duration / 60);
     const duration_seconds = Math.floor(duration - duration_minutes * 60);
     let time = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds) + " / " + duration_minutes + ":" + (duration_seconds < 10 ? "0" + duration_seconds : duration_seconds);
+  
     document.querySelector(`.ap_container_${index} .ap_time`).innerHTML = time;
 }
 
