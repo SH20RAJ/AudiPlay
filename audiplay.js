@@ -1,4 +1,3 @@
-// Codepen :- https://codepen.io/SH20RAJ/pen/YzMpONX?editors=0011
 // Constants
 const ap_playsvg = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -112,6 +111,21 @@ const ap_html = `
 .ap_time {
     margin: 4px;
 }
+.ap_controls span {
+    margin: 5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.ap_controls .playpausebtn svg,
+.ap_controls .ap_loop svg,
+.ap_controls .ap_download svg,
+.ap_controls .ap_sound svg {
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s ease;
+}
+
 </style>
 <div class="ap_container">
     <div class="ap_controls">
@@ -143,7 +157,10 @@ ap_audioElements.forEach((audioElement, index) => {
             downloadButton.style.display = 'none';
         }
     }
-  showtime(audioElement, index, true);
+     audioElement.addEventListener('loadedmetadata', function() {
+        showtime(audioElement, index); // Show time when loaded
+    });
+  
 });
 
 
@@ -221,17 +238,30 @@ ap_audioElements.forEach((audioElement, index) => {
 });
 
 // Function to display audio time
-function showtime(audioElement, index, start) {
+function showtime(audioElement, index) {
     const current = audioElement.currentTime;
     const duration = audioElement.duration;
-    const minutes = Math.floor(current / 60);
-    const seconds = Math.floor(current - minutes * 60);
-    const duration_minutes = Math.floor(duration / 60);
-    const duration_seconds = Math.floor(duration - duration_minutes * 60);
-    let time = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds) + " / " + duration_minutes + ":" + (duration_seconds < 10 ? "0" + duration_seconds : duration_seconds);
-  if(start) { time = duration_minutes + ":" + (duration_seconds < 10 ? "0" + duration_seconds : duration_seconds)}
-    document.querySelector(`.ap_container_${index} .ap_time`).innerHTML = time;
+
+    // Check if audio is still loading
+    if (isNaN(duration)) {
+        document.querySelector(`.ap_container_${index} .ap_time`).innerHTML = "Loading...";
+    } else {
+        const minutes = Math.floor(current / 60);
+        const seconds = Math.floor(current % 60);
+        const durationMinutes = Math.floor(duration / 60);
+        const durationSeconds = Math.floor(duration % 60);
+
+        const currentTimeFormatted = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+        const durationTimeFormatted = `${durationMinutes}:${durationSeconds < 10 ? "0" : ""}${durationSeconds}`;
+
+        const time = `${currentTimeFormatted} / ${durationTimeFormatted}`;
+        document.querySelector(`.ap_container_${index} .ap_time`).innerHTML = time;
+    }
 }
+
+
+
+
 
 // Function to download audio
 function ap_download(element) {
