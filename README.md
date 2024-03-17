@@ -1,6 +1,3 @@
-Sure, here is the content converted into a `README.md` file format:
-
-```markdown
 [![](https://data.jsdelivr.com/v1/package/gh/SH20RAJ/AudiPlay/badge)](https://www.jsdelivr.com/package/gh/SH20RAJ/AudiPlay)
 
 ---
