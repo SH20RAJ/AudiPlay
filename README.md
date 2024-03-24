@@ -9,11 +9,6 @@ AudiPlay Integration - Free HTML5 Audio Player
 
 ---
 
-AudiPlay version 2 with multiple audio support <3 :- [Documentation](https://www.youtube.com/watch?v=wyaoy8uB3aE) | [GitHub Repo](https://github.com/SH20RAJ/AudiPlayV2/)
-Want the Old Version :- https://github.com/SH20RAJ/AudiPlay/tree/old or Use it from Themes - https://github.com/SH20RAJ/AudiPlay/tree/main/themes/old
-
----
-
 ## See 
 - GitHub - [https://github.com/SH20RAJ/AudiPlay](https://github.com/SH20RAJ/AudiPlay) 
 - Codepen - https://codepen.io/SH20RAJ/pen/YzMpONX?editors=0011
@@ -102,6 +97,12 @@ Add `nodownload` attribute to your Audio Tag to disable the Download Button.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+AudiPlay version 2 with multiple audio support <3 :- [Documentation](https://www.youtube.com/watch?v=wyaoy8uB3aE) | [GitHub Repo](https://github.com/SH20RAJ/AudiPlayV2/)
+Want the Old Version :- https://github.com/SH20RAJ/AudiPlay/tree/old or Use it from Themes - https://github.com/SH20RAJ/AudiPlay/tree/main/themes/old
+
 
 ---
 
