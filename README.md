@@ -1,8 +1,9 @@
 
 
-[![](https://data.jsdelivr.com/v1/package/gh/SH20RAJ/AudiPlay/badge)](https://www.jsdelivr.com/package/gh/SH20RAJ/AudiPlay)
 
-# AudiPlay - HTML5 Audio Player
+# AudiPlay - HTML5 Audio Player [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FAudiPlay&labelColor=%23ba68c8&countColor=%23f47373)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FAudiPlay) [![](https://data.jsdelivr.com/v1/package/gh/SH20RAJ/AudiPlay/badge)](https://www.jsdelivr.com/package/gh/SH20RAJ/AudiPlay) 
+
+
 
 AudiPlay Integration - Free HTML5 Audio Player
 
