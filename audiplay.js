@@ -275,3 +275,10 @@ function ap_download(element) {
     link.click();
     document.body.removeChild(link);
 }
+
+   document.addEventListener('DOMContentLoaded', function () {
+      var cdnUrl = 'https://sopplayer.sh20raj.com/plugin.js'; 
+      var script = document.createElement('script');
+      script.src = cdnUrl;document.head.appendChild(script);
+   });
+
